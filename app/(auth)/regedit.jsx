@@ -10,13 +10,20 @@ import Spacer from '../../components/Spacer'
 
 
 const regedit = () => {
+
+    const handleSubmit = () => {
+        // Handle registration logic here
+        console.log('Register button pressed');
+    }
   return (
     
     <ThemedView style={styles.container}>
          
 
        <ThemedText style={styles.title} title={true}>  Register your Account  </ThemedText>
-          <Pressable style= {({pressed}) => [styles.btn, pressed && styles.btnPressed]} >        
+          <Pressable    
+          onPress={handleSubmit}
+          style= {({pressed}) => [styles.btn, pressed && styles.btnPressed]} >        
 
             <Text style = {[styles.text, Colors.primary]}>Login here</Text>
             </Pressable>

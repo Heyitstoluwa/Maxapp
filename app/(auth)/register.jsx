@@ -11,6 +11,12 @@ import Spacer from '../../components/Spacer'
 
 
 const Register = () => {
+  const handleSubmit = () => {
+    // Handle registration logic here
+    console.log('Register button pressed');
+  } 
+
+  
   return (
     <ThemedView style={styles.container}>
         <Spacer /> 
@@ -18,7 +24,9 @@ const Register = () => {
         Register for an Account  
       </ThemedText> 
 
-        <Pressable style= {({pressed}) => [styles.btn, pressed && styles.btnPressed]}>
+        <Pressable
+        onPress={handleSubmit}
+        style= {({pressed}) => [styles.btn, pressed && styles.btnPressed]}>
 
          <Text style = {{color: '#f2f2f2'}}> Register</Text>
           
@@ -26,18 +34,15 @@ const Register = () => {
 
       <Spacer height={100} />
 
-      <ThemedText style = {{textAlign: 'center'}}>Login</ThemedText>
+      <Link href="/login"> <ThemedText style = {{textAlign: 'center'}}>Login</ThemedText>
+      </Link> 
   
     </ThemedView>       
       
       
+   )   
+
  
-
-  )   
-
-
-
-  
 }
 
 export default Register
