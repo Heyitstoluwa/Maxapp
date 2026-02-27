@@ -12,7 +12,7 @@ import ThemedView from '../components/ThemedView'
 
 
 
-const Contact = () => {
+const contact = () => {
     const colorScheme = useColorScheme()
     const theme = Colors[colorScheme] ?? Colors.light 
 
@@ -26,7 +26,7 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default contact
 
 const styles = StyleSheet.create({
      container: {

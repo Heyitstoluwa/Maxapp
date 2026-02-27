@@ -27,11 +27,11 @@ const login = () => {
       <ThemedText style={styles.title} title={true} >
         Login to your Account  
       </ThemedText>    
-
+                                                                                                                                                                                                                                                                  
      <Pressable
      onPress={handleSubmit}
      
-     style= {({pressed}) => [styles.btn, pressed && styles.btnPressed]}>
+     style= {({pressed}) => [styles.btn, pressed && styles.pressed]}>
       <Text style = {{color: 'white'}}> Login Here</Text>
 
         
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
 },
   title: {
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: 18  ,
     marginBottom: 30,
   }, 
   btn: {
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
 
   },
-  btnPressed: {
+  pressed: {
     opacity: 0.7,
   }
   

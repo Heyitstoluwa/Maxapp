@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
 import { Colors } from "../constants/Colors"
+import { StatusBar } from 'expo-status-bar'
 
 
 //themed compomemts
@@ -12,8 +13,9 @@ import ThemedText from '../components/ThemedText'
 
 const Home = () => {
   return (
+    
     <ThemedView style={styles.container}>
-
+      <StatusBar value="auto" />
       <ThemedLogo style={styles.img} />
       <ThemedText style={styles.title} title={true}>Number 1 HealthApp</ThemedText>
       
@@ -37,6 +39,15 @@ const Home = () => {
 
       <Link href="/register" style={styles.link}>
       <ThemedText>Register</ThemedText></Link>
+    
+      <Link href="/profile" style={styles.link}>
+      <ThemedText>Profile</ThemedText></Link>
+    
+      <Link href="/create" style={styles.link}>
+      <ThemedText>Create</ThemedText></Link>
+    
+      <Link href="/books" style={styles.link}>
+      <ThemedText>Books</ThemedText></Link>
     
     
     

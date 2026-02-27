@@ -7,6 +7,7 @@ import { Colors } from "../../constants/Colors"
 import ThemedView from '../../components/ThemedView'
 import ThemedText from '../../components/ThemedText'
 import Spacer from '../../components/Spacer'
+import ThemedButton from '../../components/ThemedButton'
 
 
 
@@ -24,13 +25,11 @@ const Register = () => {
         Register for an Account  
       </ThemedText> 
 
-        <Pressable
-        onPress={handleSubmit}
-        style= {({pressed}) => [styles.btn, pressed && styles.btnPressed]}>
-
+        <ThemedButton
+        onPress={handleSubmit}>
          <Text style = {{color: '#f2f2f2'}}> Register</Text>
           
-        </Pressable>   
+        </ThemedButton>   
 
       <Spacer height={100} />
 
@@ -65,7 +64,7 @@ const styles = StyleSheet.create({
 
   },
 
-  btnPressed: {
+  pressed: {
     opacity:0.7,
 
   }

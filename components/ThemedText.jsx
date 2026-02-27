@@ -14,4 +14,4 @@ const ThemedText = ({ style, title=false, ...props }) => {
   )
 }
 
-export default ThemedText 
+export default ThemedText         
