@@ -2,16 +2,16 @@ import { View, useColorScheme } from 'react-native'
 import React from 'react'
 import { Colors } from '../constants/Colors'
 
-const ThemedView = ( {style, ...props}  ) => {
+const ThemedView = ({ style, ...props }) => {
     const colorScheme = useColorScheme()
-    const theme = Colors[colorScheme] ?? Colors.light  
+    const theme = Colors[colorScheme] ?? Colors.light
 
-  return (
-    <View style ={[{backgroundColor : theme.background}, style]} 
-      {...props}
-      
-    />
-  )
+    return (
+      <View
+        style={[{ backgroundColor: theme.background }, style]}
+        {...props}
+      />
+    )
 }
 
-export default ThemedView
+export default ThemedView 

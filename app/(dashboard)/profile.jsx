@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native'
 import React from 'react'
+import { StatusBar } from 'expo-status-bar';
 
 
 import Spacer from '../../components/Spacer'
@@ -12,6 +13,7 @@ import ThemedButton from '../../components/ThemedButton'
 const profile = () => {
   return (
     <ThemedView style={ styles.container}>
+      <StatusBar style='auto' />
       <ThemedText style={styles.heading} title={true}>Your Email</ThemedText>
         <Spacer />
       <ThemedText style={styles.subtitle}>Readers are Leaders</ThemedText>

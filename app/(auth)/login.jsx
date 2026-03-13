@@ -8,6 +8,7 @@ import { Colors } from '../../constants/Colors'
 import ThemedView from '../../components/ThemedView'
 import ThemedText from '../../components/ThemedText'
 import Spacer from '../../components/Spacer'
+import ThemedButton from '../../components/ThemedButton'
 
 
 
@@ -45,7 +46,7 @@ const login = () => {
       </Link> 
     </ThemedView>       
       
-      
+       
  
 
   )   
