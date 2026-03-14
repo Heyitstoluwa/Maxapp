@@ -50,9 +50,7 @@ const Home = () => {
       <ThemedText>Books</ThemedText></Link>
 
 
-     <Link href="C:\Users\Hp\Documents\Maxapp\starter-for-react-native\app\index.tsx">
-        Open Appwrite Demo
-      </Link>
+    
     
     
     </ThemedView>
