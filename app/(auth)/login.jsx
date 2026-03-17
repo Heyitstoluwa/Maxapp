@@ -1,5 +1,5 @@
-import { StyleSheet, Pressable, Text, TextInput } from 'react-native'
-import React, { use } from 'react'
+import { StyleSheet, Text } from 'react-native'
+import React from 'react'
 import { Link } from 'expo-router'  
 import { Colors } from '../../constants/Colors'
 import { useState } from 'react'
@@ -15,7 +15,7 @@ import ThemedTextInputs from '../../components/ThemedTextInputs'
 
 
 
-const login = () => {
+const Login = () => {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -24,7 +24,7 @@ const login = () => {
 
   const handleSubmit = () => {
     // Handle login logic here
-    console.log('Login button pressed');
+    console.log('Login form Submitted Successfully', email, password);
   }
 
 
@@ -58,10 +58,10 @@ const login = () => {
           
         }} 
           placeholder="Enter your Password"  
-          keyboardType="email-pass" 
+          keyboardType="default" 
           onChangeText={setPassword}
           value={password}
-          secureTextEntry={true}
+          secureTextEntry
         
       />   
                                                                                                                                                                                                                                                                       
@@ -70,8 +70,7 @@ const login = () => {
         style= {({pressed}) => [styles.btn, pressed && styles.pressed]}>
         <Text style = {{color: 'white'}}> Login Here</Text>
     </ThemedButton>
-    
-r
+
       <Spacer height={100} />
 
       <Link href="/register"> <ThemedText style = {{textAlign: 'center'}}>Register</ThemedText>
@@ -88,7 +87,7 @@ r
   
 }
 
-export default login
+export default Login
 
 const styles = StyleSheet.create({
   container: {
