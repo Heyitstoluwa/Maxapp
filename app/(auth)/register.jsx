@@ -28,6 +28,7 @@ const Register = () => {
       console.log('Error', 'Passwords do not match');
       return;
     }
+    console.log ({Alert})
   } 
 
   

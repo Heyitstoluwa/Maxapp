@@ -24,7 +24,7 @@ const Login = () => {
 
   const handleSubmit = () => {
     // Handle login logic here
-    console.log('Login form Submitted Successfully', email, password);
+    console.log('Login form Submitted Successfully','Username:', email, 'Password:', password);
   }
 
 
